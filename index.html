@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch The Fairy!</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <script type="text/javascript" 
+    src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+
+    <b>
+        <i>Hey, this is a simple game!
+    You Click on the dooors to open them,<br><br>
+    ---> IF YOU GET A FAIRY = <R>+5 points </R><br>
+    ---> IF YOU GET A DIANOSAUR = <R>0 points</R><br>
+    ---> IF YOU GET A ROBO = <R>-5 points</R> <br><br>
+    Hit the PLAY AGIAN button you keep playing :)
+        </i>
+    </b>
+    <br>
+
+    <label>Your Score:</label><input type="number" class="input" id="Show" name="fname" value="0" readonly>
+    <div class="flex-container" id="refreshDivID">
+        <div class="flex-child" id="door1" onclick="roll1()">
+            <img src="img/doorClosed.png" width="350" height="600">
+        </div>
+
+        <div class="flex-child" id="door2" onclick="roll2()">
+            <img src="img/doorClosed.png" width="350" height="600">
+        </div>
+
+        <div class="flex-child" id="door3" onclick="roll3()">
+            <img src="img/doorClosed.png" width="350" height="600">
+        </div>
+    </div>
+
+    <button id="MyButton" class="button-7">Play Again</button>
+<script>
+    $("#MyButton").click(function() {
+        flag=true;
+    $("#refreshDivID").load(" #refreshDivID");
+  }); 
+  
+</script>
+
+</body>
+</html>
